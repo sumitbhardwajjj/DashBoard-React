@@ -1,0 +1,43 @@
+.home{
+    display: flex;
+}
+
+.container{
+   
+    flex: 7;
+}
+
+.widgets{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+.charts{
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+}
+
+.listscontainer{
+    box-shadow: 0px 5px 5px 5px rgb(85, 84, 84);
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.liststitle{
+    
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+@media(max-width:550px){
+
+    .widgets{
+        width: calc(100% /1 - 15px);
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,70 @@
+.new{
+    display: flex;
+}
+
+.newContainer{
+    flex: 6;
+}
+
+.to, .bo{
+    box-shadow: 0px 5px 5px 5px rgb(83, 83, 83);
+    padding: 5px;
+    margin: 20px;
+    display: flex;
+}
+
+.le{
+    flex: 1;
+    text-align: center;
+}
+
+.rig{
+    flex: 2;
+}
+
+h4{
+    color: gray;
+}
+
+.imm{
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+.formInput{
+    width: 40%;
+}
+
+input{
+    max-width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imo{
+    cursor: pointer;
+}
+
+button{
+    width: 100px;
+    border: none;
+    background-color: rgb(46, 89, 233);
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}

@@ -1,0 +1,34 @@
+.App.Dark{
+    background-color: black;
+    color: white;
+}
+
+#data{
+    color: gray;
+}
+
+#tableCell{
+    color: gray;
+}
+
+#Cell{
+    color: gray;
+}
+
+.search input{
+    color: rgb(165, 158, 158);
+}
+
+.cellWithImg{
+    color: gray;
+}
+
+#datata{
+    color: gray;
+}
+
+li:hover{
+    background-color: rgb(240, 230, 230);
+}
+
+

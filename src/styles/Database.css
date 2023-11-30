@@ -1,0 +1,74 @@
+.cellWithImg{
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+
+.cellImg{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    margin-right: 20px;
+    color: gray;
+}
+
+.active{
+    padding: 5px;
+    color: green;
+    background-color: rgb(167, 219, 167);
+}
+
+.pending{
+    padding: 5px;
+    color: rgb(252, 143, 1);
+    background-color: yellow;
+}
+
+.passive{
+    padding: 5px;
+    color: red;
+    background-color: rgb(245, 146, 146);
+}
+
+.CellAction{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: gray;
+}
+
+.viewbutton{
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(95, 95, 235);
+    border: 1px dotted  rgb(56, 15, 240);
+}
+
+.deletebutton{
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(139, 0, 0);
+    border: 1px dotted  red;
+}
+
+.Datatitle{
+    color: gray;
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link{
+    text-decoration: none;
+    color: green;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input{
+ background-color: transparent;
+}

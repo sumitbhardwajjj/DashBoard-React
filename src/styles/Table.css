@@ -1,0 +1,31 @@
+#Cell{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.image{
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+#table{
+ background-color: transparent;
+ max-width: 100%;
+}
+.Approved{
+    padding: 5px;
+    color: green;
+    background-color: rgb(167, 219, 167);
+}
+
+.Pending{
+    padding: 5px;
+    color: rgb(252, 143, 1);
+    background-color: yellow;
+}
+
+li:hover{
+    background-color: rgb(59, 58, 58);
+}
