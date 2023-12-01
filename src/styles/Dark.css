@@ -1,7 +1,10 @@
 .App.Dark{
-    background-color: black;
+    background: black;
     color: white;
+    width:fit-content;
 }
+
+
 
 #data{
     color: gray;
