@@ -7,18 +7,17 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import New from './components/New';
 import Login from './components/Login'
 import { userInputs,productInputs } from './FormSource';
-import './styles/Dark.css'
-import { useContext } from "react";
-import { DarkModeContext } from "./context/darkModeContext";
+import Navbar from './components/Navbar';
+import {useSelector} from 'react-redux'
+
 
 
 function App() {
 
-  const { darkMode } = useContext(DarkModeContext);
-
-
+  const darkMode = useSelector(state=>state.cart.darkMode)
+ 
   return (
-    <div className={darkMode ? "App Dark" : "App"}>
+    <div className={darkMode ? "dark-mode" : "light-mode"}>
         <BrowserRouter>
         <Routes>
           <Route path="/">
@@ -40,10 +39,11 @@ function App() {
                 element={<New inputs={productInputs} title="Add New Product" />}
               />
             </Route>
+            <Route path='/' element={<Navbar darkMode={darkMode}/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
+     </div>
   );
 }
 

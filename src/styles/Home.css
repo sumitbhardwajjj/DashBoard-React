@@ -9,7 +9,7 @@
 
 .widgets{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
     padding: 10px;
 }
@@ -37,7 +37,6 @@
 @media(max-width:500px){
 
     .widgets{
-        width: 100%;
         flex-direction: column;
     }
 }

@@ -1,0 +1,40 @@
+/* .dark {
+    background: black;
+    color: white;
+    width: fit-content;
+    height: 1000vh;
+    width: 1250px;
+}
+
+li:hover {
+    background-color: rgb(240, 230, 230);
+} */
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    /* Changed to 100vh for full viewport height */
+    background-color: rgb(43, 42, 42);
+}
+
+.dark-mode #data {
+    color: gray;
+}
+
+.dark-mode .item {
+    color: white;
+}
+
+.dark-mode #tableCell,
+.dark-mode #Cell,
+.dark-mode .cellWithImg,
+.dark-mode #dataModified {
+    color: gray;
+}
+
+.dark-mode .search input {
+    color: rgb(165, 158, 158);
+}

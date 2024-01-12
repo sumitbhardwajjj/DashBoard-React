@@ -7,14 +7,18 @@ import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ListIcon from '@mui/icons-material/List';
 import SearchIcon from '@mui/icons-material/Search';
 import '../styles/Navbar.css'
-import { DarkModeContext } from "../context/darkModeContext";
-import { useContext } from "react";
+import {useDispatch} from 'react-redux'
+import {toggleDarkMode} from './Slice'
 
 
+const Navbar = ({darkMode}) => {
 
-const Navbar = () => {
+  const dispatch = useDispatch();
 
-  const { dispatch } = useContext(DarkModeContext);
+  const toogle = ()=>{
+    dispatch(toggleDarkMode())
+  }
+
 
  
 
@@ -30,7 +34,7 @@ const Navbar = () => {
             <LanguageIcon className='icon'/> English
           </div>
           <div className='item'>
-            <DarkModeIcon className='icon'  onClick={() => dispatch({ type: "TOGGLE" })} />
+            <DarkModeIcon  className='icon' onClick={()=>{toogle(darkMode)}} />
           </div>
           <div className='item'>
             <FullscreenIcon className='icon'/>
